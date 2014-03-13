@@ -1,9 +1,9 @@
 
 
-package org.pieShare.framework.services.pieLogger;
+package org.pieShare.pieTools.pieUtilities.service.pieLogger;
 
 import org.apache.log4j.PropertyConfigurator;
-import org.pieShare.framework.services.pieIngredientsStore.LoggerPropertiesDAO;
+import org.pieShare.pieTools.pieUtilities.service.pieIngredientsStore.LoggerPropertiesDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

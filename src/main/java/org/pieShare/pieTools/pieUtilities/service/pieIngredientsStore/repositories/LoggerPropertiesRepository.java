@@ -1,6 +1,6 @@
-package org.pieShare.framework.services.pieIngredientsStore.repositories;
+package org.pieShare.pieTools.pieUtilities.service.pieIngredientsStore.repositories;
 
-import org.pieShare.framework.services.pieIngredientsStore.entities.LoggerPropertiesEntity;
+import org.pieShare.pieTools.pieUtilities.service.pieIngredientsStore.entities.LoggerPropertiesEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
