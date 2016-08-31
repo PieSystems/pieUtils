@@ -1,23 +1,18 @@
-sudo: no
+sudo: false
 language: java
 jdk:
-  - oraclejdk8
-
-# whitelist
+- oraclejdk8
 branches:
   only:
-    - master
-    - development
-
+  - master
+  - development
 before_install:
-  - mvn clean
-
+- mvn clean
 script:
-  - mvn verify
-
+- mvn verify
 deploy:
   provider: bintray
   file: ".descriptor.json"
-  user: "vauvenal5"
+  user: vauvenal5
   key:
-    secure: "E9QEElm6eaLzDPIOdOm07T9DRT6bG+ZcBW7E5Rm84qiO27z5yxVXR2mDsJavOe1ZfZwM7Dgms+05XVxbgqbj2Zs+E2NyXjhuLITx0DgN3vJ/5LQsiOf+I/NB+Z5mR1i2hjta7WpxjIRS4Xi5N+mrieziTw9dnszYA1oLrzTeCJA="
+    secure: Vwb4hsfAsNZzRIwpRaJUpkldGLKGkq+BitM0eJdLbm7/hXJA2uH7PXe5VPr6LZ1QmzwYVKXVsndIJJ06bZmu6quY5GxJBOKfqfaiw7moH9UC2bO9m90ClGc9yiQ8T5aLFuPcMfubcBob8GetIMYJ3AzQVoYJtJZTHYabcuqqSjvQ2t5lipPt19uL+awOls7akXv1enbrH4siCNLkG2vZHy+EhNKRrqqyfUYrY5c1k9Ew5ykvVJ0YgKyZvdGzk53NBcY5rSfhDkk4eL40FwGpYHFoT4306uLywKrv8kChhqdJNcS3sCDAz69MwTAExrHSQn51Q0Sux32vd310xZuuvYfJDacBwSSiSx1f3r4EuyI1Ebtb4SM+9Lqgl/9dOHVtb3m1oBM3qZEn9fOPjCfXpSEh5AEnaOELHXDhpY5qYyKt2iRC41DhQ61+Aa+ievQi2l5DOxwqEMXATd6wBBQHpy220FHJs8mPlvXlU3jdWg7pZp2tTc5YHc/kiR/QbJKi3YK3NDk42nkcqZ6NmSHuDW0DoPDHnwmYV8hmYOBAxMnmBJx72OoywdyhWN689Aey5kDlJtfwEW61uMzU+CYuXcaxQITmmk0iKSw7c3QJuIcIyV77cxDaFAa8hkG3eLgl6NkAkqdXl7BJUwEpCLoL6IcuHxoB8gt2vHCabTdtTss=
