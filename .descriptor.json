@@ -25,7 +25,7 @@
 
     "files":
         [
-        {"includePattern": "target/pieUtilities-1.0-SNAPSHOT.jar", "uploadPattern": "/$1"}
+        {"includePattern": "target/(.*)", "uploadPattern": "/$1"}
         ],
     "publish": true
 }
